@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+ <!-- Navbar -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0 text-xl font-bold text-blue-600">
+          MyWebsite
+        </div>
+        <!-- Menu -->
+        <div class="hidden md:flex space-x-6">
+          <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+          <a href="about.html" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
+          <a href="service.html" class="text-gray-700 hover:text-blue-600 font-medium">Service</a>
+          <a href="portfolio.html" class="text-gray-700 hover:text-blue-600 font-medium">Portfolio</a>
+          <a href="contact.html" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+        </div>
+        <!-- Mobile Button -->
+        <div class="md:hidden">
+          <button id="menu-button" class="text-gray-600 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
+      <a href="index.html" class="block text-gray-700 hover:text-blue-600">Home</a>
+      <a href="about.html" class="block text-gray-700 hover:text-blue-600">About</a>
+      <a href="service.html" class="block text-gray-700 hover:text-blue-600">Service</a>
+      <a href="portfolio.html" class="block text-gray-700 hover:text-blue-600">Portfolio</a>
+      <a href="contact.html" class="block text-gray-700 hover:text-blue-600">Contact</a>
+    </div>
+  </nav>
+
+
+  <!-- hero part -->
+   <section class="min-h-screen flex items-center justify-center px-6 lg:px-16 bg-gradient-to-br from-blue-100 via-white to-blue-50">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      
+      <!-- Left Content -->
+      <div>
+        <h1 class="text-4xl lg:text-5xl font-extrabold text-gray-900 mb-4">
+          Hi, I'm <span class="text-blue-600">Yousuf</span><br />
+          A Passionate Web Developer
+        </h1>
+        <p class="text-gray-600 text-lg mb-6">
+          I craft clean, fast, and user-friendly websites using modern web technologies.
+          Let's build something amazing together!
+        </p>
+        <a href="#contact" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl text-lg font-medium hover:bg-blue-700 transition duration-300">
+          Hire Me
+        </a>
+      </div>
+
+      <!-- Right Image -->
+      <div class="flex justify-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Web Developer" class="w-72 h-auto md:w-96">
+      </div>
+
+    </div>
+  </section>
+
+ 
+  
+
+  <!-- education -->
+   <section class="py-16 px-6 md:px-12 lg:px-24 bg-white">
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Education</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+
+      <!-- Education Card 1 -->
+      <div class="bg-white shadow-md rounded-xl p-6 hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-blue-600 mb-2">Bachelor of Science in Computer Science</h3>
+        <p class="text-gray-700 mb-1">XYZ University</p>
+        <p class="text-gray-500 text-sm">2019 - 2023</p>
+      </div>
+
+      <!-- Education Card 2 -->
+      <div class="bg-white shadow-md rounded-xl p-6 hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-green-600 mb-2">Higher Secondary Certificate (HSC)</h3>
+        <p class="text-gray-700 mb-1">ABC College</p>
+        <p class="text-gray-500 text-sm">2017 - 2019</p>
+      </div>
+
+      <!-- Education Card 3 -->
+      <div class="bg-white shadow-md rounded-xl p-6 hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-purple-600 mb-2">Secondary School Certificate (SSC)</h3>
+        <p class="text-gray-700 mb-1">DEF High School</p>
+        <p class="text-gray-500 text-sm">2015 - 2017</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- training -->
+    <section class="py-16 px-6 md:px-12 lg:px-24 bg-white">
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">My Trainings</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+      <!-- Ostad Training -->
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 text-center">
+        <img src="https://ostad.app/favicon.ico" alt="Ostad" class="w-12 h-12 mx-auto mb-4">
+        <h3 class="text-xl font-semibold text-blue-600 mb-2">Ostad</h3>
+        <p class="text-gray-600">Completed hands-on training in web development with real-world projects.</p>
+      </div>
+
+      <!-- UY Lab Training -->
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 text-center">
+        <img src="https://uylab.org/wp-content/uploads/2021/03/cropped-uy_fav-192x192.png" alt="UY Lab" class="w-12 h-12 mx-auto mb-4">
+        <h3 class="text-xl font-semibold text-green-600 mb-2">UY Lab</h3>
+        <p class="text-gray-600">Learned advanced JavaScript and frontend frameworks through expert sessions.</p>
+      </div>
+
+      <!-- BCTI Training -->
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 text-center">
+        <img src="https://bcti-bd.com/wp-content/uploads/2021/03/cropped-bcti-32x32.png" alt="BCTI" class="w-12 h-12 mx-auto mb-4">
+        <h3 class="text-xl font-semibold text-purple-600 mb-2">BCTI</h3>
+        <p class="text-gray-600">Gained practical knowledge on IT fundamentals and software tools.</p>
+      </div>
+
+    </div>
+  </section>
+    
+  <!-- skilled information -->
+    <section class="py-16 px-6 md:px-12 lg:px-24">
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">My Skills</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      
+      <!-- HTML -->
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 text-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML" class="w-16 h-16 mx-auto mb-4">
+        <h3 class="text-xl font-semibold text-orange-600 mb-2">HTML</h3>
+        <p class="text-gray-600">Semantic, accessible, and SEO-friendly markup.</p>
+      </div>
+
+      <!-- CSS -->
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 text-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS" class="w-16 h-16 mx-auto mb-4">
+        <h3 class="text-xl font-semibold text-blue-600 mb-2">CSS</h3>
+        <p class="text-gray-600">Responsive layouts, animations, and modern styling with Tailwind.</p>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 text-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript" class="w-16 h-16 mx-auto mb-4">
+        <h3 class="text-xl font-semibold text-yellow-500 mb-2">JavaScript</h3>
+        <p class="text-gray-600">Interactive features, DOM manipulation, and dynamic content handling.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- work experience -->
+   <section class="py-16 px-6 md:px-12 lg:px-24 bg-white">
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Working Experience</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+      <!-- Experience 1 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300">
+        <h3 class="text-xl font-semibold text-blue-600 mb-2">Frontend Developer</h3>
+        <p class="text-gray-700 mb-1">ABC Software Ltd.</p>
+        <p class="text-sm text-gray-500 mb-4">Jan 2023 – Dec 2023</p>
+        <p class="text-gray-600">Worked on responsive UI design using HTML, CSS, JavaScript, and Tailwind CSS.</p>
+      </div>
+
+      <!-- Experience 2 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300">
+        <h3 class="text-xl font-semibold text-green-600 mb-2">Intern Web Developer</h3>
+        <p class="text-gray-700 mb-1">XYZ Digital Agency</p>
+        <p class="text-sm text-gray-500 mb-4">Jun 2022 – Dec 2022</p>
+        <p class="text-gray-600">Assisted in building client websites and learned practical SEO and UI optimization techniques.</p>
+      </div>
+
+      <!-- Experience 3 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300">
+        <h3 class="text-xl font-semibold text-purple-600 mb-2">Freelance Web Designer</h3>
+        <p class="text-gray-700 mb-1">Self-employed</p>
+        <p class="text-sm text-gray-500 mb-4">2021 – Present</p>
+        <p class="text-gray-600">Designed and developed custom websites for small businesses and individuals.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- footer -->
+   <footer class="bg-gray-800 text-white py-6">
+  <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+    
+    <!-- Branding -->
+    <div class="text-lg font-semibold mb-4 md:mb-0">
+      © 2025 Abdullah Al Yousuf. All rights reserved.
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="space-x-4">
+      <a href="#home" class="hover:text-gray-300 transition">Home</a>
+      <a href="#about" class="hover:text-gray-300 transition">About</a>
+      <a href="#services" class="hover:text-gray-300 transition">Services</a>
+      <a href="#contact" class="hover:text-gray-300 transition">Contact</a>
+    </div>
+
+  </div>
+</footer>
+
+
+  <!-- Optional: JavaScript for mobile toggle -->
+  <script>
+    const menuBtn = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>

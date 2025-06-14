@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Me</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+   <!-- Navbar -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0 text-xl font-bold text-blue-600">
+          MyWebsite
+        </div>
+        <!-- Menu -->
+        <div class="hidden md:flex space-x-6">
+          <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+          <a href="about.html" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
+          <a href="service.html" class="text-gray-700 hover:text-blue-600 font-medium">Service</a>
+          <a href="portfolio.html" class="text-gray-700 hover:text-blue-600 font-medium">Portfolio</a>
+          <a href="contact.html" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+        </div>
+        <!-- Mobile Button -->
+        <div class="md:hidden">
+          <button id="menu-button" class="text-gray-600 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
+      <a href="index.html" class="block text-gray-700 hover:text-blue-600">Home</a>
+      <a href="about.html" class="block text-gray-700 hover:text-blue-600">About</a>
+      <a href="service.html" class="block text-gray-700 hover:text-blue-600">Service</a>
+      <a href="portfolio.html" class="block text-gray-700 hover:text-blue-600">Portfolio</a>
+      <a href="contact.html" class="block text-gray-700 hover:text-blue-600">Contact</a>
+    </div>
+  </nav>
+
+  <section class="max-w-7xl mx-auto px-6 py-16">
+
+    <h1 class="text-4xl font-bold text-center mb-12 text-gray-800">Contact Me</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+
+      <!-- Direct Contact Info -->
+      <div class="space-y-8">
+        <div class="bg-white p-6 rounded-xl shadow-md">
+          <h2 class="text-xl font-semibold mb-4 text-blue-600">Phone</h2>
+          <p class="text-gray-700 text-lg">+880 1234 567890</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-md">
+          <h2 class="text-xl font-semibold mb-4 text-green-600">Email</h2>
+          <p class="text-gray-700 text-lg">tauhid@example.com</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-md">
+          <h2 class="text-xl font-semibold mb-4 text-purple-600">Address</h2>
+          <p class="text-gray-700 text-lg">Dhaka, Bangladesh</p>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <form class="md:col-span-2 bg-white p-8 rounded-xl shadow-md" action="#" method="POST">
+        <h2 class="text-2xl font-semibold mb-6 text-gray-800">Send me a message</h2>
+
+        <div class="mb-6">
+          <label for="name" class="block mb-2 font-medium text-gray-700">Name</label>
+          <input type="text" id="name" name="name" required
+            class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        </div>
+
+        <div class="mb-6">
+          <label for="email" class="block mb-2 font-medium text-gray-700">Email</label>
+          <input type="email" id="email" name="email" required
+            class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" />
+        </div>
+
+        <div class="mb-6">
+          <label for="message" class="block mb-2 font-medium text-gray-700">Message</label>
+          <textarea id="message" name="message" rows="5" required
+            class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+        </div>
+
+        <button type="submit"
+          class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition font-semibold">
+          Send Message
+        </button>
+      </form>
+    </div>
+
+    <!-- Google Map Embed -->
+    <div class="mt-16 rounded-xl overflow-hidden shadow-lg">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.9023365824927!2d90.38825331543317!3d23.750903594595575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b0176c5d6b%3A0x723c284e43b768c7!2sDhaka%2C%20Bangladesh!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus"
+        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+  </section>
+
+  <!-- footer -->
+   <footer class="bg-gray-800 text-white py-6">
+  <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+    
+    <!-- Branding -->
+    <div class="text-lg font-semibold mb-4 md:mb-0">
+      © 2025 Abdullah Al Yousuf. All rights reserved.
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="space-x-4">
+      <a href="#home" class="hover:text-gray-300 transition">Home</a>
+      <a href="#about" class="hover:text-gray-300 transition">About</a>
+      <a href="#services" class="hover:text-gray-300 transition">Services</a>
+      <a href="#contact" class="hover:text-gray-300 transition">Contact</a>
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
